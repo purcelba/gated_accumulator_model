@@ -19,12 +19,12 @@ The model proposes that the brain decides where to look by integrating this neur
     <sub><b>Figure 2.</b> Procedure for generating model input.  Randomly sample activity from populations of neurons when the target was inside (top) or outside (bottom) of their preferred location.  Sum the responses and convolve with an exponential kernel.</sub>
 </p>
 <br>
-<p align="center">"
+<p align="center">
     <img src="model_illustration.png" width=50% /><br>
     <sub><b>Figure 3.</b> Model schematic.  Model input (left) is integrated over time to a threshold (right) to determine where and when the eyes move.  Different parameters (grey) determine the nature of the integration process (see Purcell et al. 2010 for details).</sub>
 </p>
 <br>
-<p align="center">"
+<p align="center">
     <img src="RT_CDFs.png" width=50% /><br>
     <sub><b>Figure 4.</b> Model validation.  Cumulative predicted (lines) and observed (circles) response time distributions for trials in which the target was easy (red) or hard (green) to find.  Difficulty was controlled by changing the color of the target.</sub>
 </p>
@@ -33,7 +33,7 @@ The model proposes that the brain decides where to look by integrating this neur
 The repository contains a directory, Data, with all of the relevant neural and behavioral data from the experiment, along with Matlab functions to simulate the model.  The relevante files are the following:
 - simulateModel (wrapper funtion for generating model input, simulating the module, and plotting the results)
 - getModelInput (helper function for concatenating data across different  experimental sessions and monkeys)
-- getSDF (helper function for transforming sequences action potentials into spike rate by time, i.e., spike density function)
+- getSDF (helper function for transforming action potential times into rate functions)
 - model (core model for temporal integration over time)
 
 In practice, the core model functions were implemented in C and parameter optimization was performed on the high-performance computing cluster at the Vanderbilt Advanced Center for Computing for Research and Eduction ([ACCRE](http://www.accre.vanderbilt.edu/)).  Parameters were optimized using Nelder-Mead simplex and Genetic Algorithms implemented in Matlab.   
@@ -43,13 +43,13 @@ In practice, the core model functions were implemented in C and parameter optimi
 
 Further details about the data and the model are presented in the following paper:
 
-Purcell, B. A., Heitz, R. P., Cohen, J. Y., Schall, J. D., Logan, G. D., & Palmeri, T. J. (2010). Neurally constrained modeling of perceptual decision making. Psychological review, 117(4), 1113. [pdf](https://github.com/purcelba/purcelba.github.io/blob/master/docs/PurcellHeitzCohenSchallLoganPalmeri2010.pdf)
+    Purcell, B. A., Heitz, R. P., Cohen, J. Y., Schall, J. D., Logan, G. D., & Palmeri, T. J. (2010). Neurally constrained modeling of perceptual decision making. Psychological review, 117(4), 1113. [pdf](https://github.com/purcelba/purcelba.github.io/blob/master/docs/PurcellHeitzCohenSchallLoganPalmeri2010.pdf)
 
 A more advanced version of the model is described in the following paper:
 
-Purcell, B. A., Schall, J. D., Logan, G. D., & Palmeri, T. J. (2012). From salience to saccades: multiple-alternative gated stochastic accumulator model of visual search. Journal of Neuroscience, 32(10), 3433-3446. [pdf](https://github.com/purcelba/purcelba.github.io/blob/master/docs/PurcellSchallLoganPalmeri2012.pdf)
+    Purcell, B. A., Schall, J. D., Logan, G. D., & Palmeri, T. J. (2012). From salience to saccades: multiple-alternative gated stochastic accumulator model of visual search. Journal of Neuroscience, 32(10), 3433-3446. [pdf](https://github.com/purcelba/purcelba.github.io/blob/master/docs/PurcellSchallLoganPalmeri2012.pdf)
 
 A lighter summary of the model and background about the neurophysiology of visual decision making can be found here:
 
-Schall, J. D., Purcell, B. A., Heitz, R. P., Logan, G. D., & Palmeri, T. J. (2011). Neural mechanisms of saccade target selection: gated accumulator model of the visual–motor cascade. European Journal of Neuroscience, 33(11), 1991-2002. [pdf](https://github.com/purcelba/purcelba.github.io/blob/master/docs/SchallPurcellHeitzLoganPalmeri2011.pdf)
+    Schall, J. D., Purcell, B. A., Heitz, R. P., Logan, G. D., & Palmeri, T. J. (2011). Neural mechanisms of saccade target selection: gated accumulator model of the visual–motor cascade. European Journal of Neuroscience, 33(11), 1991-2002. [pdf](https://github.com/purcelba/purcelba.github.io/blob/master/docs/SchallPurcellHeitzLoganPalmeri2011.pdf)
 
