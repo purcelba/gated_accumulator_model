@@ -30,11 +30,12 @@ The model proposes that the brain decides where to look by integrating this neur
 </p>
 <br>
 
-The repository contains a directory, Data, with all of the relevant neural and behavioral data from the experiment, along with Matlab functions to simulate the model.  The relevante files are the following:
-- simulateModel (wrapper funtion for generating model input, simulating the module, and plotting the results)
-- getModelInput (helper function for concatenating data across different  experimental sessions and monkeys)
-- getSDF (helper function for transforming action potential times into rate functions)
-- model (core model for temporal integration over time)
+The repository contains neural and behavioral data from the experiment and the following Matlab functions to simulate the model:
+- simulateModel.m (wrapper funtion for generating model input, simulating the module, and plotting the results)
+- getModelInput.m (helper function for concatenating data across different  experimental sessions and monkeys)
+- getSDF.m (helper function for transforming action potential times into rate functions)
+- model.m (core model for temporal integration over time)
+- plotModel.m (helper function to generate figures)
 
 In practice, the core model functions were implemented in C and parameter optimization was performed on the high-performance computing cluster at the Vanderbilt Advanced Center for Computing for Research and Eduction ([ACCRE](http://www.accre.vanderbilt.edu/)).  Parameters were optimized using Nelder-Mead simplex and Genetic Algorithms implemented in Matlab.   
 
