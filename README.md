@@ -17,14 +17,18 @@ The model proposes that the brain decides where to look by integrating this neur
 <p align="center">
     <img src="model_input.png" width=50% />
     <sub><b>Figure 2.</b> Procedure for generating model input.  Randomly sample activity from populations of neurons when the target was inside (top) or outside (bottom) of their preferred location.  Sum the responses and convolve with an exponential kernel.</sub>
-    <br>
+</p>
+<br>
+<p align="center">"
     <img src="model_illustration.png" width=50% />
     <sub><b>Figure 3.</b> Model schematic.  Model input (left) is integrated over time to a threshold (right) to determine where and when the eyes move.  Different parameters (grey) determine the nature of the integration process (see Purcell et al. 2010 for details).</sub>
-    <img src="RT_CDFs.png" width=50% />
-    <br>
-    <sub><b>Figure 4.</b> Model validation.  Cumulative predicted (lines) and observed (circles) response time distributions for trials in which the target was easy (red) or hard (green) to find.  Difficulty was controlled by changing the color of the target.</sub>
-    <br>
 </p>
+<br>
+<p align="center">"
+    <img src="RT_CDFs.png" width=50% />
+    <sub><b>Figure 4.</b> Model validation.  Cumulative predicted (lines) and observed (circles) response time distributions for trials in which the target was easy (red) or hard (green) to find.  Difficulty was controlled by changing the color of the target.</sub>
+</p>
+<br>
 
 The repository contains a directory, Data, with all of the relevant neural and behavioral data from the experiment, along with Matlab functions to simulate the model.  The relevante files are the following:
 - simulateModel (wrapper funtion for generating model input, simulating the module, and plotting the results)
