@@ -8,7 +8,7 @@ The repository contains Matab functions for modeling the processes by which the 
 
 <p align="center">
     <img src="visual_search.png" width=50% /><br>
-    <sub>Figure 1. Experiment illustration.  Monkeys shifted gaze to the location of the odd-ball stimulus (red square) for juice rewards.  Action potentials were recorded from neurons in the prefrontal cortex (upper right).  The rate of action potentials was greater when the target was at the neuron's preferred location (lower right, red line) compared to when it was elsewhere (lower right, green line).</sub>
+    <sub><b>Figure 1.</b> Experiment illustration.  Monkeys shifted gaze to the location of the odd-ball stimulus (red square) for juice rewards.  Action potentials were recorded from neurons in the prefrontal cortex (upper right).  The rate of action potentials was greater when the target was at the neuron's preferred location (lower right, red line) compared to when it was elsewhere (lower right, green line).</sub>
 </p>
 <br>
 
