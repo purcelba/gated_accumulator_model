@@ -4,7 +4,7 @@ Matlab code illustrating a neural computational model of visual decision making 
 
 # About
 
-The repository contains Matab functions for modeling the processes by which the brain decides where and when to move the eyes.  Macaque monkeys were trained to view an array of visual stimuli on a computer monitor and received a juice reward for making an eye movement to the "target", for example, the red square among green squares (Fig 1).  The array was presented briefly in sequences of trials with the target at a new location each time.  While the monkeys performed the task, activity was recorded from neurons that signaled when the target was in a particular location by increasing their activity (the discharge rate of action potentials).  
+The repository contains Matab functions for modeling the processes by which the brain decides where and when to move the eyes.  Macaque monkeys viewed an array of visual stimuli and made eye movements to the "target" (e.g., red square among green squares) for a juice reward (**Fig 1**).  The array was presented briefly in sequences of trials with the target at a new location each time.  While the monkeys performed the task, activity was recorded from neurons that signaled when the target was in a particular location by increasing their activity (the discharge rate of action potentials).  
 
 <p align="center">
     <img src="visual_search.png" width=50% /><br>
